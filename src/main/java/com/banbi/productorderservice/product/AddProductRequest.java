@@ -2,7 +2,6 @@ package com.banbi.productorderservice.product;
 
 import org.springframework.util.Assert;
 
-//record가 무엇인가?
 record AddProductRequest(String name, int price, DiscountPolicy discountPolicy) {
 
     public AddProductRequest {

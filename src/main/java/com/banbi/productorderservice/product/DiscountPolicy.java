@@ -1,5 +1,5 @@
-package com.banbi.productorderservice.product;
+    package com.banbi.productorderservice.product;
 
-enum DiscountPolicy {
-    NONE
-}
+    enum DiscountPolicy {
+        NONE
+    }
