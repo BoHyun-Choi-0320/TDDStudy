@@ -1,8 +1,8 @@
 package com.banbi.productorderservice.order;
 
-import com.banbi.productorderservice.product.DiscountPolicy;
-import com.banbi.productorderservice.product.Product;
-import com.banbi.productorderservice.product.ProductRepository;
+import com.banbi.productorderservice.product.domain.DiscountPolicy;
+import com.banbi.productorderservice.product.domain.Product;
+import com.banbi.productorderservice.product.adapter.ProductRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;

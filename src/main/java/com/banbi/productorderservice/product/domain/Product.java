@@ -1,5 +1,6 @@
-package com.banbi.productorderservice.product;
+package com.banbi.productorderservice.product.domain;
 
+import com.banbi.productorderservice.product.domain.DiscountPolicy;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

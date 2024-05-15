@@ -1,5 +1,6 @@
-package com.banbi.productorderservice.product;
+package com.banbi.productorderservice.product.application.service;
 
+import com.banbi.productorderservice.product.domain.DiscountPolicy;
 import org.springframework.util.Assert;
 
 public record GetProductResponse(long id, String name, int price, DiscountPolicy discountPolicy) {

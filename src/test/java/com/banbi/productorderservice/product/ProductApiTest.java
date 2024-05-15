@@ -1,12 +1,9 @@
 package com.banbi.productorderservice.product;
 
 import com.banbi.productorderservice.ApiTest;
-import io.restassured.RestAssured;
-import io.restassured.response.ExtractableResponse;
-import io.restassured.response.Response;
+import com.banbi.productorderservice.product.adapter.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.http.HttpStatus;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

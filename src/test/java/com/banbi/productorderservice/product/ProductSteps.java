@@ -1,10 +1,12 @@
 package com.banbi.productorderservice.product;
 
+import com.banbi.productorderservice.product.application.service.AddProductRequest;
+import com.banbi.productorderservice.product.application.service.UpdateProductRequest;
+import com.banbi.productorderservice.product.domain.DiscountPolicy;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PutMapping;
 
 public class ProductSteps {
 

@@ -1,7 +1,9 @@
-package com.banbi.productorderservice.product;
+package com.banbi.productorderservice.product.adapter;
+
+import com.banbi.productorderservice.product.application.port.ProductPort;
+import com.banbi.productorderservice.product.domain.Product;
 
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 @Component
 class ProductAdapter implements ProductPort {
