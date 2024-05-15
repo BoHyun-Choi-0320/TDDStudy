@@ -12,8 +12,6 @@ import org.springframework.http.MediaType;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class ProductApiTest extends ApiTest {
-
-
     @Test
     void 상품등록(){
         final AddProductRequest request = 상품등록요청_생성();
