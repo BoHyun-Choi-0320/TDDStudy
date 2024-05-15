@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 interface ProductRepository extends JpaRepository<Product, Long> {
 
 }
