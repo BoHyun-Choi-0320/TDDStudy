@@ -12,11 +12,11 @@ public class PaymentService {
     }
 
     public void payment(final PaymentRequest request) {
-        Order order = paymentPort.getOrder(request.orderId());
+        final Order order = paymentPort.getOrder(request.orderId());
 
         final Payment payment = new Payment(order, request.cardNumber());
 
-        paymentPort.pay(payment);
+        paymentPort.pay(payment.getPrice(), payment.getCardNumber());
         paymentPort.save(payment);
     }
 }

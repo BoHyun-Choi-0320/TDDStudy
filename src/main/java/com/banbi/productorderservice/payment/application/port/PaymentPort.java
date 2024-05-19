@@ -9,5 +9,5 @@ public interface PaymentPort {
 
     void save(Payment payment);
 
-    void pay(Payment payment);
+    void pay(int totalPrice, String cardNumber);
 }

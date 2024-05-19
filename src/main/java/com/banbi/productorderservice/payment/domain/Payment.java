@@ -23,4 +23,12 @@ public class Payment {
     public Long getId() {
         return id;
     }
+
+    public int getPrice(){
+        return order.getTotalPrice();
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
 }

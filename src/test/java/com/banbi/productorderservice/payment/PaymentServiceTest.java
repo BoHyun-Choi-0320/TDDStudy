@@ -24,9 +24,7 @@ public class PaymentServiceTest {
 
     @Test
     void 상품주문() {
-        final Long orderId = 1L;
-        final String cardNumber = "1234-1234-1234-1234";
-        final PaymentRequest request = new PaymentRequest(orderId, cardNumber);
+        final PaymentRequest request = PaymentSteps.주문결제요청_생성();
         paymentService.payment(request);
     }
 
