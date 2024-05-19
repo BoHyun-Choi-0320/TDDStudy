@@ -5,7 +5,9 @@ import com.banbi.productorderservice.payment.application.port.PaymentPort;
 import com.banbi.productorderservice.payment.domain.Payment;
 import com.banbi.productorderservice.product.domain.DiscountPolicy;
 import com.banbi.productorderservice.product.domain.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PaymentAdapter implements PaymentPort {
     private final PaymentGateway paymentGateway;
     private final PaymentRepository paymentRepository;
