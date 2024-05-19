@@ -1,9 +1,11 @@
-package com.banbi.productorderservice.payment;
+package com.banbi.productorderservice.payment.adapter;
+
+import com.banbi.productorderservice.payment.domain.Payment;
 
 import java.util.HashMap;
 import java.util.Map;
 
-class PaymentRepository {
+public class PaymentRepository {
     private Map<Long, Payment> persistence = new HashMap<>();
     private Long sequence = 0L;
 

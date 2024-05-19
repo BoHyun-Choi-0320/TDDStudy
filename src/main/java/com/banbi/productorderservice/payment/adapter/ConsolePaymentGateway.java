@@ -1,4 +1,6 @@
-package com.banbi.productorderservice.payment;
+package com.banbi.productorderservice.payment.adapter;
+
+import com.banbi.productorderservice.payment.domain.Payment;
 
 public class ConsolePaymentGateway implements PaymentGateway {
     @Override

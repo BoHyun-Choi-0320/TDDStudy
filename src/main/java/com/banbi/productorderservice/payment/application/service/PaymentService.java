@@ -1,11 +1,13 @@
-package com.banbi.productorderservice.payment;
+package com.banbi.productorderservice.payment.application.service;
 
 import com.banbi.productorderservice.order.domain.Order;
+import com.banbi.productorderservice.payment.application.port.PaymentPort;
+import com.banbi.productorderservice.payment.domain.Payment;
 
-class PaymentService {
+public class PaymentService {
     private final PaymentPort paymentPort;
 
-    PaymentService(PaymentPort paymentPort) {
+    public PaymentService(PaymentPort paymentPort) {
         this.paymentPort = paymentPort;
     }
 

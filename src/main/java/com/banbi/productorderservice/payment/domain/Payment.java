@@ -1,9 +1,9 @@
-package com.banbi.productorderservice.payment;
+package com.banbi.productorderservice.payment.domain;
 
 import com.banbi.productorderservice.order.domain.Order;
 import org.springframework.util.Assert;
 
-class Payment {
+public class Payment {
     private Long id;
     private final Order order;
     private final String cardNumber;

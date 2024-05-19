@@ -1,5 +1,12 @@
 package com.banbi.productorderservice.payment;
 
+import com.banbi.productorderservice.payment.adapter.ConsolePaymentGateway;
+import com.banbi.productorderservice.payment.adapter.PaymentAdapter;
+import com.banbi.productorderservice.payment.adapter.PaymentGateway;
+import com.banbi.productorderservice.payment.adapter.PaymentRepository;
+import com.banbi.productorderservice.payment.application.port.PaymentPort;
+import com.banbi.productorderservice.payment.application.service.PaymentRequest;
+import com.banbi.productorderservice.payment.application.service.PaymentService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

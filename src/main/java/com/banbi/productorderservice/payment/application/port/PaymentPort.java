@@ -1,8 +1,9 @@
-package com.banbi.productorderservice.payment;
+package com.banbi.productorderservice.payment.application.port;
 
 import com.banbi.productorderservice.order.domain.Order;
+import com.banbi.productorderservice.payment.domain.Payment;
 
-interface PaymentPort {
+public interface PaymentPort {
 
     Order getOrder(Long orderId);
 
