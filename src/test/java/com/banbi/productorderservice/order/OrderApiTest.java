@@ -12,17 +12,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class OrderApiTest extends ApiTest {
 
-    private final OrderSteps orderSteps = new OrderSteps();
-
-    @Autowired
-    OrderRepository orderRepository;
-
     @Test
     void 상품주문(){
         // 상품주문 요청 생성
         ProductSteps.상품등록요청(ProductSteps.상품등록요청_생성());
-
-        final var request = orderSteps.상품주문요청_생성();
+        final var request = OrderSteps.상품주문요청_생성();
 
         // API 요청
         final var response = OrderSteps.상품주문요청(request);
