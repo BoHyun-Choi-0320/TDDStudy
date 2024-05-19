@@ -18,12 +18,12 @@ public class PaymentAdapter implements PaymentPort {
     }
 
     @Override
-    public Order getOrder(Long orderId) {
+    public Order getOrder(final Long orderId) {
         return new Order(new Product("상품1", 1000, DiscountPolicy.NONE), 2);
     }
 
     @Override
-    public void save(Payment payment) {
+    public void save(final Payment payment) {
         paymentRepository.save(payment);
     }
 

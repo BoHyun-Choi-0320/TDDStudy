@@ -1,5 +1,6 @@
 package com.banbi.productorderservice.payment.application.service;
 
+
 import org.springframework.util.Assert;
 
 public record PaymentRequest(Long orderId, String cardNumber) {

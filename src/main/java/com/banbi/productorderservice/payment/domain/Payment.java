@@ -1,6 +1,7 @@
 package com.banbi.productorderservice.payment.domain;
 
 import com.banbi.productorderservice.order.domain.Order;
+import jakarta.persistence.Entity;
 import org.springframework.util.Assert;
 
 public class Payment {
